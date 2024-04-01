@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratocoin - The Memecoin</title>
+    <style>
+        /* Basic styling (customize as needed) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+    	    padding: 0;
+        }
+        
+        .section1 {
+		    min-height: 100vh;
+		    text-align: center;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    background-image: url('1.png');
+		    background-attachment: fixed;
+		    text-align: center;
+		    ext-align: center;
+            	    color: #f0e68c; /* Pale yellow (beige) text color */
+        }
+        .section2 {
+        	min-height: 30vh; /* Adjust as needed */
+        	background: linear-gradient(to bottom, #d97a4e, #b84c1a);
+        	color: #f0e68c;
+        }
+        h1 {
+	    font-size: 3rem;
+	    font-weight: bold;
+	    margin-bottom: 20px;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cool text shadow effect */
+	}
+	h1:hover {
+	    text-shadow: 50px 50px 100px rgba(0, 0, 0, 1); /* Cool text shadow effect */
+	    color: #ff9900; /* Change the color on hover (use your desired color) */
+	}
+        p {
+            font-size: 1.5rem;
+	    font-weight: bold;
+	    margin-bottom: 20px;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cool text shadow effect */
+        }
+        
+        .buttons {
+	    display: flex;
+	    gap: 20px;
+	}
+	
+	.buy-button,
+	.chart-button {
+	    padding: 10px 20px;
+	    font-size: 1.1rem;
+	    background-color: #ff9900;
+	    color: #fff;
+	    border: none;
+	    border-radius: 10px;
+	    cursor: pointer;
+	    transition: background-color 0.3s ease;
+	}
+
+	.buy-button:hover,
+	.chart-button:hover {
+	    background-color: #e67e00;
+	}
+        .ratcoin-logo {
+            width: 100px;
+            height: auto;
+        }
+        .ratcoin-logo:hover {
+        transform: rotateY(180deg);
+        
+        }
+        .button {
+            padding: 30px 60px;
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .gallery-container {
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	    gap: 20px;
+	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	    overflow: hidden;
+	}
+
+	.gallery {
+	    border: 1px solid #ddd;
+	    background-color: #fff; /* Card background color */
+	    border-radius: 8px; /* Rounded corners */
+	    padding: 10px; /* Add some padding inside the card */
+	    transition: transform 0.2s ease;
+	    animation: slideUp 5s infinite alternate;
+	}
+
+	.gallery:hover {
+	    transform: rotateY(20deg);
+	    animation: none;
+	}
+
+	.gallery img {
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	    border-radius: 6px; /* Slightly rounded image corners */
+	}
+
+	/* Custom animation */
+	@keyframes slideUp {
+	    0% {
+		transform: translateY(0);
+	    }
+	    100% {
+		transform: translateY(-30px);
+	    }
+	}
+	
+	.desc {
+	    padding: 10px;
+	    text-align: center;
+	    background-color: #ff9900;
+	}
+	@media only screen and (max-width: 700px) {
+	    div.gallery img {
+		width: 150px; /* Adjust for smaller screens */
+	    }
+	}
+	div {
+	    padding-top: 50px;
+	    padding-right: 30px;
+	    padding-bottom: 50px;
+	    padding-left: 80px;
+	}
+	.header {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 20px;
+	}
+
+	.left h1 {
+	    font-size: 24px;
+	    margin: 0;
+	}
+
+	.right a {
+	    margin-left: 20px;
+	    color: #fff; /* Text color for Twitter and Telegram links */
+	    text-decoration: none;
+	    
+	}
+
+	.right a:hover {
+	    text-decoration: underline;
+	}
+	
+	.logo {
+	    display: block;
+	    max-width: 50px; /* Adjust the maximum width as needed */
+	    height: auto;
+	    margin: 0 auto; /* Center the logo horizontally */
+	}
+	.h2 {
+	    font-size: 1.8rem;
+	    color: #ff9900; /* Adjust text color */
+	    margin-bottom: 10px;
+	}
+
+	.ul {
+	    list-style: none;
+	    padding: 0;
+	    color: #ff9900;
+	}
+
+	.li {
+	    font-size: 1.2rem;
+	    color: #666; /* Adjust text color */
+	    margin: 10px 0;
+	}
+
+	.fa {
+	    margin-right: 5px;
+	}
+    </style>
+</head>
+<body>
+	
+    <section class="section1">
+	    <div class="header">
+		<div class="left">
+		    <h1>$RATO</h1>
+		</div>
+		<div class="right">
+		    <a href="https://twitter.com/ratocoin_meme" target="_blank"><img class="logo" src="twitter.svg"></a>
+		    <a href="" target="_blank" ><img class="logo" src="telegram.svg"></a>
+		</div>
+	    </div>
+	    <div>
+		    <h1>Welcome to Ratocoin!</h1>
+		    <img src="bg3.png" alt="Ratocoin Logo" class="ratcoin-logo">
+		    <div class="buttons">
+			    <button class="button buy-button">Buy Ratocoin</button>
+			    <button class="button chart-button">View Ratocoin Chart</button>
+		    </div>
+	    </div>
+    </section>
+    
+    <section class="section2">
+    	    <div>
+	    	    	<p>Ratocoin is the ultimate memecoin. $RATO mascot devours other coins for breakfast!</p>
+	    	    	<img src="bg3.png" alt="Ratocoin Logo" class="ratcoin-logo">
+	    </div>
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="3.png" class="image-link">
+				<img src="eating_bitcoin.jpeg" alt="Rato eating bitcoin - Ratocoin Meme 1">
+			    </a>
+			    <div class="desc">Rato eating bitcoin</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="eating_pepe.jpeg" alt="Rato eating Dog and shiba - Ratocoin Meme 2">
+			    </a>
+			    <div class="desc">Rato eating pepe</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="eating_shiba.jpeg" alt="Rato eating pepe - Ratocoin Meme 3">
+			    </a>
+			    <div class="desc">Rato eating s</div>
+			</div>
+		    </div>
+	</div>
+   </section>
+   <section class="section2">
+    	    <div>
+	    	    	<h1>About $RATO</h1>
+	    	    	<img src="bg3.png" alt="Ratocoin Logo" class="ratcoin-logo">
+	    	    	<p>Welcome to the world of RatoCoin, affectionately known as $RATO, where the meme madness meets crypto innovation! Get ready to witness the rise of the ultimate memecoin, where our charismatic rodent mascot doesn't just nibble at the competition – it devours them for breakfast!</p1>
+	    	    	<p>Imagine this: A bustling crypto ecosystem where $RATO reigns supreme, its mascot standing tall amidst the wreckage of lesser coins. With each dawn, RatoCoin's voracious appetite for success grows stronger, leaving a trail of conquered tokens in its wake.</p>
+	    	    	<p>As the $RATO community rallies behind their beloved mascot, the crypto landscape trembles in awe. This isn't just another memecoin; this is a revolution fueled by the insatiable hunger for greatness.
+</p>
+<p>From the depths of the internet's meme dungeons to the soaring heights of the crypto stratosphere, $RATO's journey is a testament to the power of unity, resilience, and a healthy dose of humor.
+</p>
+<p>So brace yourselves for the feast of a lifetime as $RATO devours the competition and ascends to the moon and beyond. In the world of RatoCoin, the ultimate memecoin, breakfast is served – and it's deliciously disruptive.
+</p>
+	    </div>
+	    <div class="gallery-container">
+		    
+	</div>
+   </section>
+   <section class="section2">
+   	<div>
+	    	    	<h1>My Meme-orable Gallery</h1>
+	    	    	<img src="bg3.png" alt="Ratcoin Logo" class="ratcoin-logo">
+	    </div>
+   </section>
+   <section class="section2">
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/1.png" alt="Rato in Mars">
+			    </a>
+			    <div class="desc">$RATO in Mars</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/2.png" alt="Rato in Mars 2">
+			    </a>
+			    <div class="desc">$RATO in Mars 2</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/33.png" alt="just me">
+			    </a>
+			    <div class="desc">Just $RATO</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/34.png" alt="Me Cute">
+			    </a>
+			    <div class="desc">$RATO Cute</div>
+			</div>
+		    </div>
+		    
+	</div>
+   </section>
+   <section class="section2">
+    <div>
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/35.png" alt="Rato in Mars">
+			    </a>
+			    <div class="desc">$RATO as pro</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/36.png" alt="Rato in Mars 2">
+			    </a>
+			    <div class="desc">$RATO Fat after eating doge</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/38.png" alt="just me">
+			    </a>
+			    <div class="desc">$RATO in Bull Market</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/39.png" alt="Me Cute">
+			    </a>
+			    <div class="desc">$RATO Cute 2</div>
+			</div>
+		    </div>
+		    
+	</div>
+   </section>
+   <section class="section2">
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/with_elon_7.png" alt="Rato in Mars">
+			    </a>
+			    <div class="desc">$RATO with a fun</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./galery/with_elon_10.png" alt="Rato in Mars 2">
+			    </a>
+			    <div class="desc">$RATO with a Elon talking about Mars</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/with_elon_3.png" alt="just me">
+			    </a>
+			    <div class="desc">$RATO with Elon Taking a photo</div>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./galery/with_elon_11.png" alt="Me Cute">
+			    </a>
+			    <div class="desc">ELON AND $RATO BABIES</div>
+			</div>
+		    </div>    
+	</div>
+   </section>
+   <section class="section2">
+   	    <div>
+	    	    	<h1>Philosophical Tweets from $RATO</h1>
+	    	    	<img src="bg3.png" alt="Ratcoin Logo" class="ratcoin-logo">
+	    </div>
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./twittes/1.png" alt="Rato in Mars">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./twittes/2.png" alt="Rato in Mars 2">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./twittes/3.png" alt="just me">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./twittes/4.png" alt="Me Cute">
+			    </a>
+			</div>
+		    </div>    
+	</div>
+   </section>
+   <section class="section2">
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./twittes/5.png" alt="Rato in Mars">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="" class="image-link">
+				<img src="./twittes/6.png" alt="Rato in Mars 2">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./twittes/7.png" alt="just me">
+			    </a>
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+			    <a href="img_1.jpg" class="image-link">
+				<img src="./twittes/8.png" alt="Me Cute">
+			    </a>
+			</div>
+		    </div>    
+	</div>
+   </section>
+   <section class="section2">
+   	   <div>
+	    	    	<h1>$RATO ROADMAP</h1>
+	    	    	<img src="bg3.png" alt="Ratocoin Logo" class="ratcoin-logo">
+	    </div>
+   	
+	    <div class="gallery-container">
+		    <div class="responsive">
+			<div class="gallery">
+						    <h2 class="h2">Phase 1</h2>
+				<ul class="ul">
+				    <li class="li"><i class="fa fa-check"></i>Launch website</li>
+				    <li class="li"><i class="fa fa-check"></i>Token Launch on Pump.fun</li>
+				    <li class="li"><i class="fa fa-check"></i>Engage with meme communities</li>
+				    <li class="li"><i class="fa fa-check"></i>Fuck rug pull/honeypot</li>
+				</ul>
+			    
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+						    <h2 class="h2">Phase 2</h2>
+				<ul class="ul">
+				    <li class="li"><i class="fa fa-check"></i>Raydium LP</li>
+				    <li class="li"><i class="fa fa-check"></i>Make the Meme community driven</li>
+				    <li class="li"><i class="fa fa-check"></i>1000 Holders</li>
+				    <li class="li"><i class="fa fa-check"></i>Fuck Cats & Dogs</li>
+				</ul>
+			    
+			</div>
+		    </div>
+		    <div class="responsive">
+			<div class="gallery">
+						    <h2 class="h2">Phase 3</h2>
+				<ul class="ul">
+				    <li class="li"><i class="fa fa-check"></i>CoinMarketCap/CoinGecko</li>
+				    <li class="li"><i class="fa fa-check"></i>CEX Listing</li>
+				    <li class="li"><i class="fa fa-check"></i>Go buy lambo</li>
+				</ul>
+			    
+			</div>
+		    </div>
+	</div>
+   </section>
+   <section class="section2">
+    	    <div>
+	    	    	<h1>Financial Disclaimer: Risks Associated with Investing in Memecoins, Including Rato Token</h1>
+	    	    	<img src="bg3.png" alt="Ratocoin Logo" class="ratcoin-logo">
+	    	    	<p>$RATO COIN is a type of cryptocurrency that, like other memecoins, frequently gains popularity through internet memes and social media trends. While these tokens may offer entertainment value and potential profitability, it's crucial to recognize the significant risks they entail. These risks include high volatility, speculative nature, and a lack of regulatory oversight. Before considering investment in Rato Token or any memecoin, it is imperative to conduct thorough research and fully comprehend the associated risks.
+	</p>
+	</section>
+</body>
+</html>
